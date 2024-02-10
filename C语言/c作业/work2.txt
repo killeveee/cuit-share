@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int calc(int a, int b, int *h,int *c,int *j,int *s)
+{
+	*h=a+b;
+	*c=a-b;
+	*j=a*b;
+	if(b==0)//判断b是否为0
+		return 0;
+	else
+		*s=a/b;
+	return 1;
+}
+
+int main() {
+	int a,b,he,cha,ji,shang;
+	int*h=&he,*c=&cha,*j=&ji,*s=&shang;
+
+	scanf("%d%d",&a,&b);//输入1 2
+
+	if(calc(a,b,h,c,j,s))//判断返回值
+		printf("和:%d\n差:%d\n积:%d\n商:%d\n",he,cha,ji,shang);
+	/*输出：
+			和:3
+			差:-1
+			积:2
+			商:0
+	*/
+	else
+		printf("输入错误！！！");
+	
+	return 0;
+}
