@@ -1,0 +1,33 @@
+use library
+ #代码开始
+ #第一题
+select sm,count(*)jycs  from borrow left join book on book.txm=borrow.txm 
+group by sm 
+order by count(*) desc,sm desc;
+ #第二题
+select sm,count(*)jycs  from borrow left join book on book.txm=borrow.txm 
+group by sm having(count(*)>=2)
+order by count(*)  desc,sm desc;
+
+
+ #第三题
+select cbs,count(*)jycs from borrow left join book on book.txm=borrow.txm 
+group by cbs
+order by count(*) desc,cbs desc;
+
+
+ #第四题
+select xm,count(*)jycs from borrow left join reader on borrow.dzzh=reader.dzzh 
+group by xm
+order by  count(*) desc,xm desc;
+
+
+ #第五题
+ 
+select xm,count(*)jycs from borrow left join reader on borrow.dzzh=reader.dzzh 
+where sf='研究生'
+group by xm
+order by count(*) desc,xm desc;
+ 
+ 
+ #代码结束

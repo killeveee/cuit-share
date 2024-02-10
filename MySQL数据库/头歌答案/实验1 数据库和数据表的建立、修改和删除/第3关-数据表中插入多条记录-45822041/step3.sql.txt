@@ -1,0 +1,9 @@
+use library;
+#代码开始
+insert into reader(xm,xb,sf,dhhm)
+values ('黄小小','男','研究生',13316789987),
+('刘大任','男','工作人员',18012341234),
+('邓朝阳','女','研究生',17716554432);
+ 
+ #代码结束
+ select * from reader;

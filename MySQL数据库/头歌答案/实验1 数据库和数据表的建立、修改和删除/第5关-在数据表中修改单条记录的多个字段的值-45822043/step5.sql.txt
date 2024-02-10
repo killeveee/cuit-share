@@ -1,0 +1,7 @@
+ use library;
+ #代码开始
+ update reader set dhhm=13315667745 where xm='陈洁';
+update reader set sf='工作人员' where xm='陈洁';
+
+ #代码结束
+ select * from reader;

@@ -1,0 +1,15 @@
+ use province;
+#代码开始
+#题目1
+select sf,count(*) from jdxx group by sf;
+#题目2
+
+select cs,count(*) from jdxx group by cs having count(*)>200;
+#题目3
+
+select qxmc,count(*) from jdxx where cs="长沙市" group by qxmc;
+
+#题目4
+ 
+ 
+ #代码结束

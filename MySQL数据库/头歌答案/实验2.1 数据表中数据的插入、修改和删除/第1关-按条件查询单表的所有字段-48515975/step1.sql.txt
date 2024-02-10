@@ -1,0 +1,11 @@
+ use province;
+ #代码开始
+ #第一题
+select * from jdxx where qxmc="开福区";
+ #第二题
+
+select * from jdxx where qxmc="开福区" or qxmc="岳麓区";
+ #第三题
+ select * from jdxx where cs="长沙市" and name="西湖街道";
+  
+ #代码结束

@@ -1,0 +1,10 @@
+ use library;
+ #代码开始
+ #第一题
+select txm,jyrq,hsrq from reader,borrow where reader.xm="王颖珊" and reader.dzzh=borrow.dzzh;
+ #第二题
+select dzzh,jyrq,hsrq from book,borrow where book.sm="李白全集" and book.txm=borrow.txm;
+
+select reader.dzzh,reader.xm,reader.dhhm,book.txm,book.sm,borrow.jyrq from reader,book,borrow where hsrq is null and book.txm=borrow.txm and reader.dzzh=borrow.dzzh;
+  
+ #代码结束

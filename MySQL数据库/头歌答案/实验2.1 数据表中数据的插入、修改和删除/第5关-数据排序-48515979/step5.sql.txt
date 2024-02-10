@@ -1,0 +1,11 @@
+ use province;
+ #代码开始
+ #第一题
+select * from jdtj order by jdgs desc limit 0,10;
+ #第二题
+select * from jdtj order by jdgs asc limit 0,10;
+
+ #第三题
+ select * from jdtj where jdgs>35 order by jdgs desc,sf asc ;
+
+ #代码结束

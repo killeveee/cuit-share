@@ -1,0 +1,23 @@
+ use library;
+#代码开始
+#题目1
+select dzzh,xm from reader where reader.dzzh in (select dzzh from borrow);
+#题目2
+select txm,sm from book where book.txm not in (select txm from borrow);
+
+#题目3
+select dzzh,xm from reader where reader.dzzh in (select dzzh from borrow 
+where txm in (select txm from borrow 
+where borrow.dzzh=(select dzzh from reader 
+where xm='孙思旺'))) 
+and dzzh!='006' order by dzzh asc;
+
+
+#题目4
+ 
+select sm from book where book.txm in (select txm from borrow
+where borrow.dzzh in (select dzzh from borrow 
+where borrow.txm=(select txm from book where sm="李白全集")))
+and sm!="李白全集" order by sm asc;
+
+ #代码结束

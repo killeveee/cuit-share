@@ -1,0 +1,9 @@
+USE Company;
+
+#请在此处添加实现代码
+########## Begin ##########
+#1.查询大于所有平均年龄的员工姓名与年龄
+select `name`,`age` from tb_emp where age>(select avg(age) from tb_emp);
+
+
+########## End ##########

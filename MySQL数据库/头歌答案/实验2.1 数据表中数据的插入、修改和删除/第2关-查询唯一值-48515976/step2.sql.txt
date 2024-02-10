@@ -1,0 +1,7 @@
+use province
+ #代码开始
+ select distinct qxmc from jdxx where sf="湖南省";
+ select distinct qxmc from jdxx where cs="长沙市";
+ 
+ 
+ #代码结束

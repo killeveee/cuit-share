@@ -1,0 +1,5 @@
+use library;
+#代码开始
+update reader set dzzh=dzzh+10;
+#代码结束
+select * from reader;

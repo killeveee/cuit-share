@@ -1,0 +1,7 @@
+ use library;
+#代码开始
+update reader set dhhm=17718991989 where xm='林团团';
+ 
+ 
+ #代码结束
+ select * from reader;

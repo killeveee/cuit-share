@@ -1,0 +1,5 @@
+ use library;
+ #代码开始
+insert into reader (xm,dhhm) values('林团团',13507311234);
+select * from reader;
+ #代码结束

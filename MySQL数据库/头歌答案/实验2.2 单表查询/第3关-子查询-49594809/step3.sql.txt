@@ -1,0 +1,15 @@
+use library;
+#代码开始
+#答案1
+select sm from book where cbs=(select cbs from book where sm="李白全集") and sm!="李白全集";
+#答案2
+select sm,sj from book where sj>(select avg(sj) from book);
+
+#答案3
+select txm,sm,sj from book where sj=(select max(sj) from book);
+
+
+select txm,sm,sj from book where sj=(select min(sj) from book);
+ 
+
+ #代码结束

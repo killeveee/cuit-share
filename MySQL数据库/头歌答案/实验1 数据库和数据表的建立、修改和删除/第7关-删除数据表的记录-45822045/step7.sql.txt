@@ -1,0 +1,5 @@
+ use library;
+ #代码开始
+ delete from reader where xm='陈洁';
+ #代码结束
+select * from reader;

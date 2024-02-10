@@ -1,0 +1,5 @@
+ use library;
+ #代码开始
+insert into reader values (2,'陈洁','女','教研人员',13319551234);
+ #代码结束
+ select * from reader;
